@@ -1,0 +1,211 @@
+.itemDis-container{
+    display: flex;
+    margin: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    height: 94vh;
+    
+}
+
+.itemDis-details{
+    background-color: rgb(224, 223, 223);
+    flex: 2;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.itemDis-price{
+    background-color:rgb(224, 223, 223);
+    flex: 1;
+    margin: 6px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.itemDis-title{
+    /* background-color: cornflowerblue; */
+    font-size: 38px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.itemDis-details-up{
+    /* background-color: darkcyan; */
+    display: flex;
+    height: 55%;
+    margin-top: 6px;
+}
+
+.itemDis-imgbox{
+    /* background-color: darkgoldenrod; */
+    height: 100%;
+    width: 68%;
+    overflow: hidden;
+    position: relative;
+}
+
+.or-carousel{
+    background-color:rgb(204, 204, 204);
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.itemDis-carousel{
+    /* background-color: brown; */
+    width: 75%;
+    margin: auto;
+}
+
+.itemDis-carousel > img {
+
+}
+
+.itemDis-info{
+    /* background-color: darkorchid; */
+    margin: auto;
+}
+
+.itemDis-seller{
+    padding: 3px;
+}
+
+.itemDis-seller > div, .itemDis-quantity, .itemDis-brand, .itemDis-rating {
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.itemDis-quantity{
+    display: flex;
+    /* background-color: darkgoldenrod; */
+}
+
+.itemDis-quantity > Button{
+ margin-left: auto;
+ text-align: center;
+ padding: 0;
+ width: 40px;
+ 
+}
+
+.quantity-label{
+    margin-right: 18px
+}
+
+.quantity-number{
+    width: 50px;
+    /* background-color: chocolate; */
+    margin-left: auto;
+    text-align: center;
+    
+}
+
+.itemDis-rating{
+    display: flex;
+}
+
+.rating{
+    margin-top: -3px;
+    margin-left: 5px;
+    /* background-color: darkgreen; */
+    padding: 0px;
+}
+
+.itemDis-details-down{
+    background-color: rgb(204, 204, 204);
+    margin-top: 3px;
+    padding: 10px;
+    border-radius: 4px;
+    height: 35%;
+}
+
+.itemDis-discription{
+    padding: 35px;
+    font-size: 14px;
+    text-align: justify;
+    /* background-color: darkseagreen; */
+}
+
+.itemDis-btn{
+    display: flex;
+    justify-content: center
+}
+
+.itemDis-btn > Button {
+    margin: 10px;
+    width: 35%
+}
+
+.itemDis-calculate{
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.itemDis-price-keys{
+    /* background-color: darkslateblue; */
+    padding-left: 7px;
+    flex: 2;
+}
+
+.itemDis-price-values{
+    /* background-color: deeppink; */
+    padding-right: 10px;
+    flex: 1;
+}
+
+.itemDis-price-keys > p {
+    /* background-color: goldenrod; */
+    margin-bottom: 2px;
+}
+
+.itemDis-price-values > p {
+    text-align: end;
+    margin-bottom: 2px;
+    /* background-color: dodgerblue; */
+}
+
+.itemDis-discount{
+    color:chocolate;
+    font-weight: 400;
+}
+
+.itemDis-total{
+    margin-top: 7px;
+    padding-top: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+
+.itemDis-services{
+   
+    background-color: rgb(204, 204, 204);
+    border-radius: 4px;
+    padding: 20px 7px;
+    margin-top: 25px;
+}
+
+.itemDis-services > p {
+    /* background-color: burlywood; */
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.itemDis-services > p > .iconify {
+   font-size: 20px;
+   margin: 0px 10px;
+   color: crimson;
+}
+
+.itemDis-delivery{
+    margin-top: 25px;
+    background-color: chocolate;
+}
+

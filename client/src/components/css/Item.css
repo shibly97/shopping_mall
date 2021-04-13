@@ -1,0 +1,147 @@
+.item-container{
+    width: 200px;
+    height: 305px;
+    background-color: rgb(190, 170, 170);
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px black ;
+    margin: 8px;
+}
+
+.item-container:hover{
+    box-shadow: 4px 4px 6px 0px black ;
+}
+
+.item-imgbox{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    height: 45%;
+    /* background-color: royalblue; */
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-imgbox:hover{
+    cursor: pointer;
+}
+
+.item-infobox{
+    width: 94%;
+    margin:3px auto;
+    height: 50%;
+    border-radius: 2px;
+    /* background-color: rgb(199, 216, 49); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-infoDetails{
+    width: 95%;
+    height: 15vh;
+    /* background-color: rgb(216, 102, 49); */
+    margin: auto;
+}
+
+.item-infoDetails:hover{
+    cursor: pointer;
+}
+
+.item-infoDetails > h5{
+    font-size: 17px;
+    text-align: center;
+    padding: 0px;
+}
+
+.item-button{
+    /* background-color: brown; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.item-imgbox > img{
+    width: 100%;
+}
+
+.color-star{
+    color: rgb(218, 218, 44);
+}
+
+.normal-star{
+    color:white
+}
+
+.one-time{
+    /* background-color: blueviolet; */
+    font-size: 12.5px;
+    margin-bottom: 0px;
+}
+
+.one-time > p{
+    /* background-color: cadetblue; */
+    padding:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.date-icon,.price-nego-icon{
+    margin: 0px 4px 2.5px 2px;
+}
+
+.rating{
+    font-size: 18px;
+    /* background-color: darkcyan; */
+    padding-left: 3px;
+}
+
+.price-dis{
+    /* background-color: rgb(115, 168, 115); */
+
+}
+
+.price-dis > p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* background-color: darkorchid; */
+    padding: 0px;
+}
+
+.cut-price{
+    text-decoration: line-through;
+    font-size: 14px;
+    /* padding-left: 3px; */
+}
+
+.dis{
+    padding-left: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(211, 49, 0);
+}
+
+.new-price{
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.reguler-price{
+    /* background-color: darkorchid; */
+    margin-top: 14px;
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.item-btn{
+    margin-top: 10px;
+}

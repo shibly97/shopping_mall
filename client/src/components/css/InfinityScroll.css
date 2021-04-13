@@ -1,0 +1,22 @@
+.infintyScroll-container{
+    width: 90%;
+    /* background-color: brown; */
+    margin: auto;
+}
+
+.infintyScroll-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.loading-spin{
+
+    flex-basis: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}

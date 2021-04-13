@@ -1,0 +1,51 @@
+.carousel-container{
+    width: 100%;
+    height: 80vh;
+    background-color : #0f0f0f;
+    overflow: hidden;
+} 
+
+.carousel-box{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(116, 112, 112);
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-box > img{
+    position: absolute;
+}
+
+.carousel-shadow{
+    width: 100vw;
+    height: 80vh;
+    box-shadow: inset 0 0 0 1000px rgb(0,0,0,0.7);
+    position: absolute;
+}
+
+.carousel-caption{
+    margin-bottom: 110px;
+}
+
+.carousel-caption > h3{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.home-items-container{
+    margin-top: 10px;
+    padding: 20px;
+    /* background-color: blue; */
+}
+
+@media screen and (max-width: 600px){
+    .carousel-caption{
+        margin-bottom: 95px;
+    }
+
+    .carousel-caption > h3{
+        margin-bottom: 55px;
+        font-size: 40px;
+    }
+}

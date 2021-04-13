@@ -1,0 +1,14 @@
+.bg-gray{
+    background-color: rgba(234, 231, 220, 1);
+}
+
+.icon-shopping{
+    /* background-color: blue; */
+    font-size: 21px;
+    margin-left: 6px;
+    margin-bottom: 7px;
+}
+
+.orange{
+    background-color: rgb(255, 115, 0);
+}
