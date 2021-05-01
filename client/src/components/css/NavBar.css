@@ -1,5 +1,5 @@
 .nav{
-    margin: auto;
+    margin: 0px auto;
 }
 
 .nav-link{
@@ -8,6 +8,10 @@
 
 .dropdown-second{
     margin-left: 15px;
+}
+
+.navbar-main-container{
+    position: absolute;
 }
 
 @media screen and (max-width: 768px){

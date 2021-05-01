@@ -1,0 +1,8 @@
+.sidemenu-menu-active > div, .sidemenu-submenu-active{
+    background-color: lawngreen;
+    color: rgb(240, 10, 22);
+}
+
+.sidemenu-menu-deactive{
+    color: lightsalmon;
+}

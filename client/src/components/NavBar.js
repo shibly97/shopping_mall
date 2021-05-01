@@ -37,6 +37,7 @@ function NavBar() {
     }
 
     useEffect(() => {
+        // getting all main and sub catagorise
         axios.get('/api/main_cat')
         .then(res => {
             setMainCat(res.data)
@@ -48,17 +49,24 @@ function NavBar() {
             // console.log(res.data[0])
         })
 
+        //In initial rendering checking whether the user logged in early or not
         if(!isAuthenticated && localStorage.getItem('accesstoken')){
+
             axios.post('/auth/checkAccesstoken',{accesstoken:localStorage.getItem('accesstoken')})
             .then(res =>{
                 if(res.data.authorized){
+
                     dispatch(authenticated(res.data.user_id))
+
                 }else if(localStorage.getItem('refreshtoken')){
+
                     axios.post('/auth/checkRefreshtoken',{refreshtoken:localStorage.getItem('refreshtoken')})
                     .then(res => {
                         if(res.data.authorized){
+
                             localStorage.setItem("accesstoken", res.data.accesstoken)
                             localStorage.setItem("refreshtoken", res.data.refreshtoken)
+                            
                             dispatch(authenticated(res.data.user_id))
                         }
                     })
@@ -69,7 +77,7 @@ function NavBar() {
     }, [])
 
     return (
-        <div>
+        <div classname="navbar-main-container">
             <Navbar  className="bg-gray" expand ="md">
 
                 <Navbar.Brand as={Link} to="/nav/home">
@@ -109,7 +117,7 @@ function NavBar() {
 
                         <NavDropdown.Divider />
                         {isAuthenticated? <><NavDropdown title="Profile" id="basic-nav-dropdown">
-                        <NavDropdown.Item  as={Link} to="/nav/profile">Profile settings</NavDropdown.Item>
+                        <NavDropdown.Item  as={Link} to="/nav/dashboard">Dashboard</NavDropdown.Item>
                         <NavDropdown.Item  as={Link} to="/nav/orders">Orders and Adds</NavDropdown.Item>
                         <NavDropdown.Item onClick={navLogout} >Logout</NavDropdown.Item>
                         </NavDropdown> <Nav.Link as={Link} to='/nav/cart' className='nav-link'>Cart</Nav.Link> </>

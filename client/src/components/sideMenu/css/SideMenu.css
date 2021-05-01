@@ -1,0 +1,40 @@
+.sidemenu-container-open{
+    /* background-color: rgba(234,231,220,1); */
+    background-color: rgb(73, 72, 67);
+    width: 300px;
+    transition: 2s;
+}
+
+.sidemenu-container-open > .menuhandler{
+    background-color: cornflowerblue;
+    font-size: 35px;
+    text-align: end;
+}
+
+.sidemenu-container-open > .menuhandler > span{
+    
+}
+
+.sidemenu-container-open > .menuitems{
+    display: block;
+}
+
+.sidemenu-container-close{
+    /* background-color: darkcyan; */
+    transition: 2s;
+    width: 0px;
+}
+
+.sidemenu-container-close > .menuhandler{
+}
+
+.sidemenu-container-open > .menuhandler > span{
+    
+}
+
+.sidemenu-container-close > .menuitems{
+    transition: 2s;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+}

@@ -14,7 +14,7 @@ import Login from './pages/Login.js'
 import Register from './pages/Register.js'
 import Cart from './pages/Cart.js'
 import Checkout from './pages/Checkout.js'
-import Profile from './pages/Profile.js'
+import Dashboard from './pages/Dashboard.js'
 import Post from './pages/Post.js'
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
 
       <ProtectedRoute path="/nav/cart" component={Cart}/>
       <ProtectedRoute path="/nav/checkout" component={Checkout}/>
-      <ProtectedRoute path="/nav/profile" component={Profile}/>
+      <ProtectedRoute path="/nav/dashboard" component={Dashboard}/>
       <ProtectedRoute path="/nav/post" component={Post}/>
       
       </Provider>
