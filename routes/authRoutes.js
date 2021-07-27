@@ -12,9 +12,10 @@ router.post('/register',(req,res)=>{
 
     const hashPassword = bcrypt.hashSync(req.body.password, salt);
 
-    pool.query('insert into partner (userid,firstname,mobile,password,username) values(uuid_generate_v4(),$1,$2,$3,$4)',[req.body.firstname,req.body.mobile,hashPassword,req.body.username])
+    pool.query('insert into partner (userid,firstname,mobile,password,username) values(uuid_generate_v4(),$1,$2,$3,$4) returning userid',[req.body.firstname,req.body.mobile,hashPassword,req.body.username])
     .then(result => {
         console.log("Successfully registered")
+        console.log(result.rows[0].userid)
         res.json({
             register: true
          })

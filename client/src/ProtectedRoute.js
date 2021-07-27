@@ -18,6 +18,7 @@ return (
         }else if(localStorage.getItem('accesstoken')){
             axios.post('/auth/checkAccesstoken',{accesstoken : localStorage.getItem('accesstoken')})
             .then(res => {
+                
                if(res.data.authorized){
                    dispatch(authenticated(res.data.user_id))
                }else if(localStorage.getItem('refreshtoken')){
